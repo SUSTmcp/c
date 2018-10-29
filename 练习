@@ -15,3 +15,42 @@ int main()
 	system("pause");
 	return 0;
 }
+
+//素数
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+	int i = 101; 
+	for (i = 101;i <= 200; i+=2)
+	{
+		int j=2;
+		for(j=2; j<i/2; j++)
+		{
+			if (i % j==0)
+				break;
+		}
+		if (j >= i/2)
+			printf(" %d\n", i);
+
+	}
+	system("pause");
+	return 0;
+}
+//乘法口诀表
+#include<stdio.h>
+#include <stdlib.h>
+int main()
+{
+	int a,b;
+	for (a=1; a<=9; a++)
+	{ 
+	   for(b=1; b<=a; b++)
+	   {
+         printf("%d * %d = %d    ",b, a, a*b);
+	   }
+	     printf("\n");
+	}
+	system("pause");
+    return 0;
+}
